@@ -1,4 +1,23 @@
 {
   "name": "my-app",
-  "slug": "my-app"
+  "slug": "my-app",
+  "android": {
+    "package": "com.janwiebejump.myapp",
+    "newArchEnabled": false
+  },
+  "plugins": [
+    [
+      "expo-build-properties",
+      {
+        "android": {
+          "extraMavenRepos": [
+            "../../node_modules/@notifee/react-native/android/libs"
+          ]
+        }
+      }
+    ]
+  ],
+  "ios": {
+    "bundleIdentifier": "com.janwiebejump.myapp"
+  }
 }
